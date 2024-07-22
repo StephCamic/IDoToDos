@@ -1,0 +1,31 @@
+/* 	
+=============================================================================
+ PRIMARY STYLES
+=============================================================================
+*/
+
+body {
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+
+}
+
+.todochecklist {
+    text-align: left;
+
+}
+
+.h2 {
+    text-align: center; 
+
+}
