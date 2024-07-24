@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>I Do To-Dos</title>
     <link rel="stylesheet" href="style.css">
-
-    <!--  <link href= "**FONTSLINK**" rel="stylesheet">
-    //<link rel="icon" href= "**IMAGEDOCNAME**" type="image"> -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -27,20 +26,21 @@
         **</nav>
     **</header> -->
 <main>
-    <section class="dateinput">
-        <h1>When's the Big Day?</h1>
-        <p class="dateinstructions">
+    <section class="hero-image">
+        <section class="hero-text">
+        <h1 class="playfairfont">When's the Big Day?</h1>
+        <p class="sourcesansfont">
             Plug in your expected wedding date to receive your month-by-month I Do To-Do list!
         </p>
-        <label for="weddingdate">Our "I Do" Date:</label>
+        <label class="playfairfont2" for="weddingdate">Our "I Do" Date:</label>
         <input type="date" id="weddingdate" name="weddingdate" placeholder="dd-mm-yyyy" 
-           value="" min="1957-01-01" max="2085-12-31"><br>
+           value="" min="1957-01-01" max="2085-12-31"><br><br><br>
 
            <!-- SOMETHING TO FIX THE DATE ICON ISSUE IN SAFARI? AND ADD IN A VALUE IN JSCRIPT FOR 
             AUTOPOPULATING TODAY'S DATE? ADD IN SOMETHING TO TELL THE USER THERE'S AN ARROR IF THEY 
             PLUG IN A PAST DATE?-->
-
-           <input type="submit" value="Submit">
+        <input type="submit" value="Submit"><br><br>
+        </section>
     </section>
 </main>
 <main>

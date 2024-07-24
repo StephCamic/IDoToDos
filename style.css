@@ -5,27 +5,67 @@
 */
 
 body {
-    width: 100%;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content: center;
+    margin: 0;
 }
 
 main {
-    width: 100%;
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     justify-content: center;
+}
 
+.hero-image { 
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: url("floralring.jpg");
+    filter: brightness(90%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    backdrop-filter: blur(2.5px);
+    padding-bottom: 2em;
+}
+
+h1 {
+    padding: 0;
+}
+.playfairfont {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.playfairfont2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.75rem;
+}
+
+.sourcesansfont {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
 }
 
 .todochecklist {
     text-align: left;
-
 }
 
 .h2 {
     text-align: center; 
-
 }
