@@ -20,7 +20,7 @@ main {
     height: 100vh;
     color: white;
     background-image: url("floralring.jpg");
-    filter: brightness(90%);
+    filter: brightness(95%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -38,6 +38,26 @@ main {
 h1 {
     padding: 0;
 }
+
+h2 {
+    text-align: center;
+}
+
+.footercontent {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    display: block;
+    position: relative;
+    padding: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
 .playfairfont {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -59,13 +79,32 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1rem;
+    font-size: .95rem;
+}
+
+.sourcesansfont2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: .75rem;
 }
 
 .todochecklist {
     text-align: left;
 }
 
-.h2 {
-    text-align: center; 
+.checktext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .95rem;
+    padding-left: 1em;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkboxpadding {
+    padding-left: 4rem;
 }

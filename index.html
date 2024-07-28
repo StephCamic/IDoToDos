@@ -25,6 +25,7 @@
             <span><a href="#">☰</a></span>
         **</nav>
     **</header> -->
+
 <main>
     <section class="hero-image">
         <section class="hero-text">
@@ -39,50 +40,59 @@
            <!-- SOMETHING TO FIX THE DATE ICON ISSUE IN SAFARI? AND ADD IN A VALUE IN JSCRIPT FOR 
             AUTOPOPULATING TODAY'S DATE? ADD IN SOMETHING TO TELL THE USER THERE'S AN ARROR IF THEY 
             PLUG IN A PAST DATE?-->
-        <input type="submit" value="Submit"><br><br>
+        <input class="sourcesansfont2" type="submit" value="Submit"><br><br>
         </section>
-    </section>
+    </section><br><br>
 </main>
+
 <main>
     <section class="todochecklist">
         <section class=months id=planningmonth1>
-            <h2>12+ Months Before Your "I Do" Date</h2>
+            <h2 class="playfairfont2">12+ Months Before Your "I Do" Date</h2>
 
             <!--  SOME WAY TO "HIDE" ANY CHECKED ITEMS SO WHEN THE DOC ACTUALLY PRINTS, IT'S ONLY 
                 PRINTING THE THINGS THEY STILL NEED TO DO-->
-            <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION??**** -->
+            <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION AFTER H2 (ie April 2025+)?? -->
             
             <form action="/action_page.php"> 
                 
-            <!-- ****NOT SURE WHAT THIS ACTION THING IS ABOVE?? DO I NEED THIS TO BE A FORM OR CAN IT 
-                JUST BE A SECTION?**** -->
+            <!-- NOT SURE WHAT THIS ACTION THING IS ABOVE?? DO I NEED THIS TO BE A FORM OR CAN IT 
+                JUST BE A SECTION? -->
                 
+                <section class="flex">
                 <input type="checkbox" id="checklist1" name="todo1.1" value="Vision">
-                <label for="checklist1">Discuss overall vision of event with your partner and any important stakeholders 
+                <label class="checktext" for="checklist1">Discuss overall vision of event with your partner and any important stakeholders 
                     (parents, grandparents, etc.). You will need to begin planning with at least a general idea of city/city options and
                     type of event (traditional, elopement, destination, etc.) to be able to book a planner and find a venue that aligns 
                     with your wedding day priorities. Your entire vision does not have to be defined at this point, but it is best to 
                     have some basic parameters in mind to save yourself time on the planner and venue search.</label><br>
+                </section><br>
+                <section class="flex">
                 <input type="checkbox" id="checklist1" name="todo1.2" value="GuestList">
-                <label for="checklist1">Create a guest list (or potentially multiple lists--an “A” list, a “B” list, etc.). Be sure to 
+                <label class="checktext" for="checklist1">Create a guest list (or potentially multiple lists--an “A” list, a “B” list, etc.). Be sure to 
                     check with any important stakeholders for their input as needed. It will save time and energy later if you start this
                     process with an organization plan in mind (an Excel sheet or virtual address book), as you will need to gather 
                     many addresses/attendance counts/meal selections/etc. for your event as the planning process continues.</label><br>
                     <!-- POTENTIALLY LINK ACCESS TO MY GUEST LIST EXCEL SHEET HERE? -->
+                </section><br>
+                <section class="flex">
                 <input type="checkbox" id="checklist1" name="todo1.3" value="Budget">
-                <label for="checklist1">Discuss the wedding budget with your partner & any family member who might be contributing to 
+                <label class="checktext" for="checklist1">Discuss the wedding budget with your partner & any family member who might be contributing to 
                     the cost of the event. It will save time and energy later if you start this process with an organization plan in mind 
                     (an Excel sheet or some sort of accounting document), as you will need to manage many different payments throughout 
                     the planning process.</label><br>
                     <!-- POTENTIALLY LINK ACCESS TO MY BUDGET EXCEL SHEET HERE? -->
+                </section><br>
+                <section class="flex">
                 <input type="checkbox" id="checklist1" name="todo1.4" value="Season">
-                <label for="checklist1">Select a preferred season of the year or even ideal date-—and alternate options to ensure 
-                    flexibility for potential venues/vendors!</label><br>
+                <label class="checktext" for="checklist1">Select a preferred season of the year or even ideal date-—and alternate options to ensure 
+                    flexibility for potential venues/vendors!</label>
+                </section><br>
             </form>
         </section>
         
         <section class=months id=planningmonth2>
-            <h2>12-9 Months Before Your "I Do" Date</h2>
+            <h2 class="playfairfont2">12-9 Months Before Your "I Do" Date</h2>
     
             <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION??**** -->
                 
@@ -90,56 +100,59 @@
                     
             <!-- ****NOT SURE WHAT THIS ACTION THING IS ABOVE?? DO I NEED THIS TO BE A FORM OR
                         CAN IT JUST BE A SECTION?**** -->
-                    
+
+                
+            <section class="flex">       
                 <input type="checkbox" id="checklist2" name="todo2.1" value="Vendors">
-                <label for="checklist2">Book your wedding day vendors! We highly recommend following the order listed below for your booking priority, 
+                <label class="checktext" for="checklist2">Book your wedding day vendors! We highly recommend following the order listed below for your booking priority, 
                     but after finalizing your venue and date, you can always choose to hire in order of your unique wedding day priorities instead.</label><br><br>
-            
-                    <!--EXTRA INDENTATION HERE FOR THE VENDORS SECTION WITHIN THIS CHECKLIST POINT-->
-            
+            </section><br> 
+               
+                <section id="checkboxpadding">
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.1" value="Venue">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         venue & final date for both your wedding ceremony AND reception (BEFORE booking an outdoor venue, be sure to consider an outdoor 
-                        contingency plan, also!)</label><br>
+                        contingency plan, also!)</label>
+                </section>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.2" value="Planner">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         professional wedding planner (If interested in booking a full planner, you could also consider booking this vendor PRIOR to booking 
-                        your venue, so you could use your professional planner's expertise to help with your venue search.)</label><br>
-                    <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.3" value="Caterer">
-                    <label for="vendorchecklist2.1">
+                        your venue, so you could use your professional planner's expertise to help with your venue search.)</label><br>  
+                        <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.3" value="Caterer">
+                    <label class="checktext" for="vendorchecklist2.1">
                         caterer for both food and drinks</label><br>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.4" value="Coordinator">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         wedding day coordinator (if not booking a full planner)</label><br>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.5" value="Photographer">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         photographer</label><br>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.6" value="Videographer">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         videographer</label><br>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.7" value="FloralDesigner">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         floral designer</label><br>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.8" value="ReceptionMusic">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         reception DJ or band (Be sure to consider all potential microphone needs for your event prior to booking this vendor!)</label><br>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.9" value="HAMU">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         hair/make-up stylist</label><br>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.10" value="Calligraphy">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         calligrapher or stationary designer</label><br>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.11" value="Bakery">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         bakery</label><br>
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.12" value="Rentals">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" for="vendorchecklist2.1">
                         rentals (drapery, linens, chairs, tables, other furniture, lighting, tents, etc.)</label><br><br>
 
                         <!--EXTRA INDENTATION HERE FOR THE NOTE WITHIN THIS CHECKLIST POINT-->
 
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.13" value="RentalsNote">
-                    <label for="vendorchecklist2.1">
+                    <label class="checktext" id="checklist3" for="vendorchecklist2.1">
                         IMPORTANT NOTE: If planning an at-home affair or a tented event where you will need to create the event space yourself,
                         you should book your rentals in place of your venue and prioritize these vendors much earlier in the planning process.</label><br><br>
 
@@ -157,35 +170,49 @@
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.17" value="SpecialtyVendors">
                     <label for="vendorchecklist2.1">
                         any "specialty vendors" you might want to include on your big day (photo booth, dance lessons for first dance, guest favors, 
-                        wedding exit strategy, etc.)</label><br><br>
-
-                <!--END OF EXTRA INDENTATION HERE FOR THE VENDORS SECTION WITHIN THIS CHECKLIST POINT-->
+                        wedding exit strategy, etc.)</label><br><br> 
+                <!--END OF EXTRA INDENTATION HERE FOR THE VENDORS SECTION WITHIN THIS CHECKLIST POINT-->    
+                </section><br>
             
+            <section class="flex">
                 <input type="checkbox" id="checklist2" name="todo2.2" value="Theme">
                 <label for="checklist2">Finalize your wedding color palette, theme, and design.</label><br>
+            </section><br>
+            <section class="flex">
                 <input type="checkbox" id="checklist2" name="todo2.3" value="Shopping">
                 <label for="checklist2">Start shopping for your wedding day attire and accessories (both partners!). This task should be finalized by at least 6 months 
                     before your wedding date, as bridal gowns/specialty tuxes often take multiple months to come in and may require additional alterations before your big day.</label><br>
-                <input type="checkbox" id="checklist2" name="todo2.4" value="EngagementPhotos">
+            </section><br> 
+            <section class="flex">
+               <input type="checkbox" id="checklist2" name="todo2.4" value="EngagementPhotos">
                 <label for="checklist2">Schedule and take your engagement pictures. If possible, use your wedding day photographer to start building that vendor relationship 
                     and ensure your satisfaction with their photography style prior to the big day!</label><br>
+            </section><br>
+            <section class="flex">
                 <input type="checkbox" id="checklist2" name="todo2.5" value="Save-The-Dates">
                 <label for="checklist2">Design and order your "Save the Dates." If using an engagement photo for these cards, be sure to take your engagement 
                     pictures early enough to get the Save-the-Dates in the mail to guests by AT LEAST 6 months prior to wedding date (ideally 8-10 months prior to wedding date for holiday or destination weddings).</label><br>
+            </section><br>
+            <section class="flex">
                 <input type="checkbox" id="checklist2" name="todo2.6" value="WeddingParty">
                 <label for="checklist2">Choose and ask all attendants (bridesmaids, groomsmen, ushers, readers, flower girl, ring bearer, etc.). Make sure they 
                     are aware of any important wedding-related events you'd like them to attend (not JUST wedding day, but rehearsals/showers/bachelor & bachelorette parties, etc.)
                     prior to committing to their roles.</label><br>
+            </section><br>
+            <section class="flex">
                 <input type="checkbox" id="checklist2" name="todo2.7" value="CeremonyTime">
                 <label for="checklist2">Set the general ceremony and reception start time for wedding day.</label><br>
+            </section><br>
+            <section class="flex">
                 <input type="checkbox" id="checklist2" name="todo2.8" value="Hotels">
                 <label for="checklist2">Reserve all hotel rooms/accommodations needed for you and your guests (hotel room blocks for guests, night before the wedding rooms 
                     for the happy couple, wedding night accommodations, etc.).</label><br>
+            </section><br> 
             </form>
         </section>
         
         <section class=months id=planningmonth3>
-            <h2>9-6 Months Before Your "I Do" Date</h2>
+            <h2 class="playfairfont2">9-6 Months Before Your "I Do" Date</h2>
 
             <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION??**** -->
             
@@ -217,7 +244,7 @@
         </section>
 
         <section class=months id=planningmonth4>
-            <h2>6-4 Months Before Your "I Do" Date</h2>
+            <h2 class="playfairfont2">6-4 Months Before Your "I Do" Date</h2>
         
                 <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION??**** -->
                 
@@ -251,7 +278,7 @@
         </section>
 
         <section class=months id=planningmonth5>
-            <h2>4-2 Months Before Your "I Do" Date</h2>
+            <h2 class="playfairfont2">4-2 Months Before Your "I Do" Date</h2>
         
                 <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION??**** -->
                 
@@ -280,7 +307,7 @@
         </section>
 
         <section class=months id=planningmonth6>
-            <h2>8-5 Week(s) Before Your "I Do" Date</h2>
+            <h2 class="playfairfont2">8-5 Week(s) Before Your "I Do" Date</h2>
         
                 <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION??**** -->
                 
@@ -332,7 +359,7 @@
         </section>
 
         <section class=months id=planningmonth7>
-            <h2>5-3 Weeks Before Your "I Do" Date</h2>
+            <h2 class="playfairfont2">5-3 Weeks Before Your "I Do" Date</h2>
         
                 <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION??**** -->
                 
@@ -368,7 +395,7 @@
         </section>
         
         <section class=months id=planningmonth8>
-            <h2>3 Weeks-1 Day Before Your "I Do" Date</h2>
+            <h2 class="playfairfont2">3 Weeks-1 Day Before Your "I Do" Date</h2>
         
                 <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION??**** -->
                 
@@ -397,7 +424,7 @@
         </section> 
 
         <section class=months id=planningmonth9>
-            <h2>1 Day Before Your "I Do" Date</h2>
+            <h2 class="playfairfont2">1 Day Before Your "I Do" Date</h2>
         
                 <!--  SOMETHING HERE THAT WOULD AUTOPOPULATE THE ACTUAL MONTHS IN QUESTION??**** -->
                 
@@ -416,13 +443,13 @@
         </section> 
 
         <section class=months id="planningmonth10"?>
-            <h2>Then... Enjoy Your "I Do" Day!</h2>
+            <h2 class="playfairfont2">Then... Enjoy Your "I Do" Day!</h2>
         </section>
     </section>
     
     <!--ADDING A PRINT BUTTON-->
     <section>
-        <button onClick="window.print()">Print Your "I Do To-Dos!"</button>
+        <button class="sourcesansfont2" onClick="window.print()">Print Your "I Do To-Dos!"</button>
     </section>
     <!--ADDING A PRINT BUTTON-->
 
