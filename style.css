@@ -33,6 +33,12 @@ main {
 .hero-text {
     backdrop-filter: blur(2.5px);
     padding-bottom: 2em;
+    padding: 1.5em;
+}
+
+#weddingdate {
+    margin-top: 1em;
+    font-size: larger;
 }
 
 h1 {
@@ -49,8 +55,15 @@ h2 {
     padding: .5em;
 }
 
-.footercontent {
+.footer-content {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    color: white;
+}
+
+.footer-container {
+    background: rgb(156 159 142);
+    padding: .25em;
 }
 
 form {
@@ -58,7 +71,7 @@ form {
     font-size: 1rem;
     display: block;
     position: relative;
-    padding: 2em;
+    padding: 1em;
     cursor: pointer;
     user-select: none;
     /*background-color: rgb(156 159 142);*/
@@ -80,20 +93,12 @@ form {
     font-size: 1.75rem;
 }
 
-.sourcesansfont {
+.playfairfont3 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.1rem;
-}
-
-.sourcesansfont2 {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: .75rem;
+    font-weight: 550;
+    font-style: italic;
+    font-size: .9rem;
 }
 
 .todochecklist {
@@ -104,23 +109,95 @@ form {
 .checktext {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .95rem;
-    padding-left: 2em;
+    padding-left: .5em;
 }
 
 /*each checkbox unit*/
 .flex {
     display: flex;
     align-items: flex-start;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
 }
 
 /*each checkbox unit with extra indentation--LEVEL 1*/
 #checkboxpadding {
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
 
 /*each checkbox unit with extra indentation--LEVEL 2, Important Notes Sections*/
 .checkboxpadding2 {
-    padding-left: 2rem;
-    padding-right: 6rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+/* 	
+=============================================================================
+ MEDIA QUERY STYLES
+=============================================================================
+*/
+
+@media only screen and (min-width: 320px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-text {
+        padding: 0;
+    }
+
+    form {
+        padding: 2em;
+    }
+    
+    .checktext {
+        padding-left: 2em;
+    }
+
+    #checkboxpadding {
+        padding-left: 3rem;
+    }
+
+    .checkboxpadding2 {
+        padding-left: 2rem;
+        padding-right: 6rem;
+    }
+
+    .flex {
+        padding-bottom: 1rem;
+    }
+
+    #weddingdate {
+        font-size: 1.3em;
+    }
+
+    .playfairfont3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* 	
+=============================================================================
+ PRINT STYLES
+=============================================================================
+*/
+
+
+/* @media print {
+	* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+	/* a, a:visited { color: #444 !important; text-decoration: underline; }
+	a[href]:after { content: " (" attr(href) ")"; }
+	abbr[title]:after { content: " (" attr(title) ")"; }
+	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+	/* pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+	thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+	/* tr, img { page-break-inside: avoid; }
+	img { max-width: 100% !important; }
+	@page { margin: 0.5cm; }
+	p, h2, h3 { orphans: 3; widows: 3; }
+	h2, h3{ page-break-after: avoid; }
 }
