@@ -35,14 +35,15 @@
         </p>
         <label class="playfairfont2" for="weddingdate">Our "I Do" Date:</label>
         <input type="date" id="weddingdate" name="weddingdate" placeholder="dd-mm-yyyy" 
-           value="" min="1957-01-01" max="2085-12-31"><br><br><br>
+           value=""><br><br><br>
 
            <!-- SOMETHING TO FIX THE DATE ICON ISSUE IN SAFARI? AND ADD IN A VALUE IN JSCRIPT FOR 
             AUTOPOPULATING TODAY'S DATE? ADD IN SOMETHING TO TELL THE USER THERE'S AN ERROR IF THEY 
             PLUG IN A PAST DATE?-->
 
-        <input type="submit" value="Submit"><br><br>
-        </section>
+        <input type="submit" onclick="validateDate()" value="Submit">
+        <p id="errorMessage">INVALID DATE</p>
+        <br><br></section>
     </section><br><br>
 </main>
 
@@ -601,7 +602,7 @@
     </section>
 
 
-    <script src="js/app.js"></script>
+    <script src="./script.js"></script>
     
 </body>
 </html>

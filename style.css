@@ -130,6 +130,13 @@ form {
     padding-right: 2rem;
 }
 
+#errorMessage {
+    display: none;
+    color: red;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
 /* 	
 =============================================================================
  MEDIA QUERY STYLES
