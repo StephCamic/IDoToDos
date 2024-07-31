@@ -37,9 +37,8 @@
         <input type="date" id="weddingdate" name="weddingdate" placeholder="dd-mm-yyyy" 
            value=""><br><br><br>
 
-           <!-- SOMETHING TO FIX THE DATE ICON ISSUE IN SAFARI? AND ADD IN A VALUE IN JSCRIPT FOR 
-            AUTOPOPULATING TODAY'S DATE? ADD IN SOMETHING TO TELL THE USER THERE'S AN ERROR IF THEY 
-            PLUG IN A PAST DATE?-->
+           <!-- ADD IN A VALUE IN JSCRIPT FOR 
+            AUTOPOPULATING TODAY'S DATE?-->
 
         <input type="submit" onclick="validateDate()" value="Submit">
         <p id="errorMessage">INVALID DATE</p>
@@ -50,11 +49,11 @@
 <main>
     
     <section class="h1box">
-        <h1 class="playfairfont4" id=monthMessage></h1>
+        <h1 class="playfairfont4" id="monthsMessage"></h1>
     </section>
    
     <section class="todochecklist">
-        <section class=months id=planningmonth1>
+        <section class="months" id="planningmonth1">
             <section class="h2box">
             <h2 class="playfairfont5">12+ Months Before Your "I Do" Date: "INSERT ACTUAL MONTHS HERE"</h2>
             </section>
@@ -100,7 +99,7 @@
             </form>
         </section>
         
-        <section class=months id=planningmonth2>
+        <section class="months" id="planningmonth2">
             <section class="h2box">
             <h2 class="playfairfont5">12-9 Months Before Your "I Do" Date: "INSERT ACTUAL MONTHS HERE"</h2>
             </section>
@@ -111,8 +110,7 @@
                     
             <!-- ****NOT SURE WHAT THIS ACTION THING IS ABOVE?? DO I NEED THIS TO BE A FORM OR
                         CAN IT JUST BE A SECTION?**** -->
-
-                
+               
         <section>    
             <section class="flex">       
                 <input type="checkbox" id="checklist2" name="todo2.1" value="Vendors">
@@ -124,7 +122,7 @@
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.1" value="Venue">
                     <label class="checktext" for="vendorchecklist2.1">
                         venue & final date for both your wedding ceremony AND reception (BEFORE booking an outdoor venue, be sure to consider an outdoor 
-                        contingency plan, also!)</label>
+                        contingency plan, also! Check the historical weather conditions for your specific wedding date here.)</label>
                 </section>
                 <section class="flex">
                     <input type="checkbox" id="vendorchecklist2.1" name="vendors2.1.2" value="Planner">
@@ -248,7 +246,7 @@
             </form>
         </section>
         
-        <section class=months id=planningmonth3>
+        <section class="months" id="planningmonth3">
             <section class="h2box">
             <h2 class="playfairfont5">9-6 Months Before Your "I Do" Date: "INSERT ACTUAL MONTHS HERE"</h2>
             </section>
@@ -296,7 +294,7 @@
             </form>
         </section>
 
-        <section class=months id=planningmonth4>
+        <section class="months" id="planningmonth4">
             <section class="h2box">
             <h2 class="playfairfont5">6-4 Months Before Your "I Do" Date: "INSERT ACTUAL MONTHS HERE"</h2>
             </section>
@@ -348,7 +346,7 @@
             </form>
         </section>
 
-        <section class=months id=planningmonth5>
+        <section class="months" id="planningmonth5">
             <section class="h2box">
             <h2 class="playfairfont5">4-2 Months Before Your "I Do" Date: "INSERT ACTUAL MONTHS HERE"</h2>
             </section>
@@ -389,7 +387,7 @@
             </form>
         </section>
 
-        <section class=months id=planningmonth6>
+        <section class="months" id="planningmonth6">
             <section class="h2box">
             <h2 class="playfairfont5">8-5 Week(s) Before Your "I Do" Date: "INSERT ACTUAL MONTHS HERE"</h2>
             </section>
@@ -461,7 +459,7 @@
             </form>
         </section>
 
-        <section class=months id=planningmonth7>
+        <section class="months" id="planningmonth7">
             <section class="h2box">
             <h2 class="playfairfont5">5-3 Weeks Before Your "I Do" Date: "INSERT ACTUAL MONTHS HERE"</h2>
             </section>
@@ -515,7 +513,7 @@
             </form>
         </section>
         
-        <section class=months id=planningmonth8>
+        <section class="months" id="planningmonth8">
             <section class="h2box">
             <h2 class="playfairfont5">3 Weeks-1 Day Before Your "I Do" Date: "INSERT ACTUAL MONTHS HERE"</h2>
             </section>
@@ -560,7 +558,7 @@
             </form>
         </section> 
 
-        <section class=months id=planningmonth9>
+        <section class="months" id="planningmonth9">
             <section class="h2box">
             <h2 class="playfairfont5">1 Day Before Your "I Do" Date: "INSERT ACTUAL MONTHS HERE"</h2>
             </section>
@@ -585,7 +583,7 @@
             </form>
         </section> 
 
-        <section class=months id="planningmonth10"?>
+        <section class="months" id="planningmonth10">
             <section class="h2box">
             <h2 class="playfairfont5">Then... Enjoy Your "I Do" Day!</h2>
             </section>
@@ -593,7 +591,7 @@
     </section><br><br>
     
     <!--ADDING A FUNCTIONING PRINT BUTTON-->
-    <section>
+    <section class="printbutton">
         <button onClick="window.print()">Print Your "I Do To-Dos!"</button>
     </section>
     <!--ADDING A FUNCTIONING PRINT BUTTON-->
@@ -605,7 +603,6 @@
             <p class="footer-content">&copy; 2024 Code:You. Maintained by Stephanie Camic.</p> 
         </footer>
     </section>
-
 
     <script src="./script.js"></script>
     
