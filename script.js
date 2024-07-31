@@ -22,9 +22,9 @@ async function getData() {
         const date = document.getElementById("weddingdate").value;
         const newdate = new Date(date);
         const finaldate = new Date(date);
-        const enddate = new Date(newdate.setFullYear(newdate.getFullYear() - 1));
-        const date2 = new Date(finaldate.setFullYear(finaldate.getFullYear() - 1));   
-        const startdate = new Date(date2.setDate(date2.getDate() - 1));
+        const enddate = new Date(newdate.setFullYear('2023'));
+        const date2 = new Date(finaldate.setFullYear('2023'));   
+        const startdate = new Date(date2.setDate(date2.getDate() - 2));
         const startDate = getFormattedDate(startdate);
         const endDate = getFormattedDate(enddate);
        
@@ -50,14 +50,28 @@ function validateDate() {
     const today = new Date();
     const errorMessageElem = document.getElementById("errorMessage");
     const monthsElem = document.getElementById("monthsMessage");
+    const toDoElem = document.getElementById("toDos");
+    const printElem = document.getElementById("printbutton");
 
     if (formattedDate > today){
         errorMessageElem.style.display = "none";
         const months = monthsDiff(today, formattedDate)
         monthsElem.innerHTML = months + " Months Until Your \"I Do\" Day!";
+        monthsElem.style.display = "block";
+        toDoElem.style.display = "block";
+        printElem.style.display = "block";
         getData();
 
     } else {
         errorMessageElem.style.display = "block"; 
     }
 }
+
+//Date Submit Button Function By Hitting Enter
+let input = document.getElementById("weddingdate");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("submit").click();
+  }
+});
