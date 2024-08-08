@@ -10,8 +10,13 @@ Some things I included in my original Project Plan that are also not yet functio
 3.	Responsive Design Tools & Technologies: I use HTML, CSS (Grid, Flexbox, Media Queries), JavaScript, & Weatherbit API in this project.
 
 4.	Feature Implementation: 
-•	Feature 1C: Use a regular expression to validate user input and either prevent the invalid input or inform the user about it. I used this feature for my wedding date entry on the home page; the overall to-do checklist will not populate until a valid wedding date is inputted, and the page will tell users if date inputted does not work within parameters.
-•	Feature 1F: Visualize data in a user friendly way. I created the checklist to look organized & well-separated by monthly tasks, with tasks able to be literally “checked-off” as needed.
-•	Feature 1J: Calculate and display data based on an external factor. I use the users wedding date input to display how many months are remaining until the user’s wedding date at the top of the checklist.
-•	Feature 2A: By integrating Weatherbit API, retrieve data from said API and use it to display something within my website. In the to-do checklist, under the "12-9 Months Before Your I Do Date" section within the checklist item for "venue and final date," I used Weatherbit API historical data to display the temperature on the user's inputted wedding date in the year of 2023 (the last full calendar year recorded), with the thought that couples could reference this data while considering specific weather data on their preferred wedding date.
-•	Feature 3C: Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc). I used a calendar-date-picker for the actual wedding date input on home page, if preferred to typing it in manually.
+    
+    Feature 1C: Use a regular expression to validate user input and either prevent the invalid input or inform the user about it. I used this feature for my wedding date entry on the home page; the overall to-do checklist will not populate until a valid wedding date is inputted, and the page will tell users if date inputted does not work within parameters.
+    
+    Feature 1F: Visualize data in a user friendly way. I created the checklist to look organized & well-separated by monthly tasks, with tasks able to be literally “checked-off” as needed.
+    
+    Feature 1J: Calculate and display data based on an external factor. I use the users wedding date input to display how many months are remaining until the user’s wedding date at the top of the checklist.
+    
+    Feature 2A: By integrating Weatherbit API, retrieve data from said API and use it to display something within my website. In the to-do checklist, under the "12-9 Months Before Your I Do Date" section within the checklist item for "venue and final date," I used Weatherbit API historical data to display the temperature on the user's inputted wedding date in the year of 2023 (the last full calendar year recorded), with the thought that couples could reference this data while considering specific weather data on their preferred wedding date.
+    
+    Feature 3C: Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc). I used a calendar-date-picker for the actual wedding date input on home page, if preferred to typing it in manually.
