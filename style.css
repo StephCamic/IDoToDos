@@ -141,13 +141,6 @@ form {
     padding-left: 1rem;
 }
 
-/*each checkbox unit with extra indentation--LEVEL 2, Important Notes Sections*/
-#checkboxpadding2 {
-    padding-left: 2.2rem;
-    padding-right: 2.2rem;
-    padding-bottom: 1rem;
-}
-
 #errorMessage {
     display: none;
     color: red;
@@ -189,11 +182,6 @@ form {
     padding: 1em;
 }
 
-.hiddencheckbox {
-    display: none;
-}
-
-
 /* 	
 =============================================================================
  MEDIA QUERY STYLES
@@ -217,11 +205,6 @@ form {
         padding-left: 3rem;
     }
 
-    .checkboxpadding2 {
-        padding-left: 4rem;
-        padding-right: 6rem;
-    }
-
     .flex {
         padding-bottom: 1rem;
     }
@@ -239,25 +222,22 @@ form {
     }
 }
 
-
 /* 	
 =============================================================================
  PRINT STYLES
 =============================================================================
 */
 
+@media print {
+    .noprint {
+        display: none;
+    }
 
-/* @media print {
-	* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
-	/* a, a:visited { color: #444 !important; text-decoration: underline; }
-	a[href]:after { content: " (" attr(href) ")"; }
-	abbr[title]:after { content: " (" attr(title) ")"; }
-	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-	/* pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-	thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
-	/* tr, img { page-break-inside: avoid; }
-	img { max-width: 100% !important; }
-	@page { margin: 0.5cm; }
-	p, h2, h3 { orphans: 3; widows: 3; }
-	h2, h3{ page-break-after: avoid; }
+    .flex {
+        padding-bottom: 0;
+    }
+
+    form {
+        padding: 1em;
+    }
 }

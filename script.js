@@ -41,7 +41,7 @@ async function getData() {
     catch (err) {
         console.log('uh oh');
     }
-  }
+}
 
 // Validate Date Input
 function validateDate() {
@@ -75,3 +75,36 @@ input.addEventListener("keypress", function(event) {
     document.getElementById("submit").click();
   }
 });
+
+//Hide Checked To-Do List Items
+function onCheck() {
+    let checkedBox = document.getElementsByClassName("checkBox");    // Get the checkbox
+    let todoText = document.getElementsByClassName("checkText");     // Get the output text
+
+    for (let i = 0; i < checkedBox.length; i++) {
+    if (checkedBox[i].checked === true){     // If the checkbox is checked, DO NOT display the output text
+      todoText[i].style.color = "#D3D3D3";
+      todoText[i].style.fontStyle = "italic";
+      checkedBox[i].style.display = "none";
+    } else {
+      todoText[i].style.color = "black";
+      todoText[i].style.fontStyle = "normal";
+      checkedBox[i].style.display = "block";
+    }}
+}
+
+//Print Window
+function printList(){
+    let checkedBox = document.getElementsByClassName("checkBox");    // Get the checkbox
+    let todoText = document.getElementsByClassName("checkText");     // Get the output text
+    
+    for (let i = 0; i < checkedBox.length; i++) {
+        if (checkedBox[i].checked === true){     // If the checkbox is checked, DO NOT display the output text
+          todoText[i].style.display = "none";
+          checkedBox[i].style.display = "none";
+        } else {
+          todoText[i].style.display = "block";
+          checkedBox[i].style.display = "block";
+        }}
+    window.print();
+}
