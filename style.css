@@ -127,6 +127,7 @@ form {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .95rem;
     padding-left: .5em;
+    text-align: left;
 }
 
 /*each checkbox unit*/
@@ -134,6 +135,7 @@ form {
     display: flex;
     align-items: flex-start;
     padding-bottom: .5rem;
+    text-align: left;
 }
 
 /*each checkbox unit with extra indentation--LEVEL 1*/
