@@ -21,3 +21,5 @@
     Feature 2A: By integrating Weatherbit API, retrieve data from said API and use it to display something within my website. In the to-do checklist, under the "12-9 Months Before Your I Do Date" section within the checklist item for "venue and final date," I used Weatherbit API historical data to display the temperature on the user's inputted wedding date in 2023 (the last full calendar year recorded), with the thought that couples could reference this data while considering specific weather records on their preferred wedding date.
     
     Feature 3C: Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc). I used a calendar-date-picker for the actual wedding date input on home page, if preferred to typing it in manually.
+
+   Hero Image: Joy-Monet Photography for Anderson-Camic Wedding 10/08/2018 (my wedding!)
